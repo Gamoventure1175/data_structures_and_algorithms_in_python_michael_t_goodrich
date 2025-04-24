@@ -9,3 +9,7 @@ def is_even(k: int) -> bool:
 print('Is 2 an even number? ', is_even(2))
 print('Is 27 an even number? ', is_even(27))
 print('Is 91 an even number? ', is_even(91))
+
+#Alternate uproach using bitwise operators
+def is_even(k: int) -> bool:
+    return (k & 1) == 0
